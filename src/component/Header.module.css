@@ -1,0 +1,32 @@
+.header {
+    display:block;
+    margin-bottom: 20px;
+    padding-top: 200px;
+    text-align: center; /*horizontal center*/
+
+}
+
+.brandname{
+    font-weight: bold;
+    background: linear-gradient(90deg, 
+    var(--accent), 
+    var(--accentgradient) );
+    background-clip: text; /*show bg in text shape*/
+    -webkit-text-fill-color: transparent;/*actual text color invisible*/
+    background-size: 300% 300%;
+    animation: gradientMove 5s ease infinite; /*full cycle 5s, ease movement, infinite*/
+}
+
+@keyframes gradientMove {
+  0% { /*start position*/
+    background-position: 0% 50%;
+  }
+
+  50% {/*move right*/
+    background-position: 100% 50%;
+  }
+
+  100% {/*back to start*/
+    background-position: 0% 50%;
+  }
+}
