@@ -32,12 +32,13 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
-    --text-h: #f3f4f6;
+    --text-h: #f3f4f6; /**/ 
     --bg: #16171d;
-    --border: #2e303a;
+    --border: #000000;
     --code-bg: #1f2028;
     --accent: #B0E4CC;/**/
     --accentgradient: #408A71; /**/
+    --hoverbutton:#285A48; /**/
     --accent-bg: rgba(192, 132, 252, 0.15);
     --accent-border: rgba(192, 132, 252, 0.5);
     --social-bg: rgba(47, 48, 58, 0.5);
@@ -55,11 +56,10 @@ body {
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;

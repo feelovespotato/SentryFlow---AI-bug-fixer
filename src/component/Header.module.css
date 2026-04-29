@@ -1,12 +1,51 @@
-.header {
+.Header {
     display:block;
     margin-bottom: 20px;
-    padding-top: 200px;
+    padding-top: 20px;
     text-align: center; /*horizontal center*/
 
 }
 
-.brandname{
+.NavBar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg);
+  display: flex;
+  justify-content: space-between;  /* logo left, button right */
+  align-items: center;
+  padding: 15px 32px;
+}
+
+.Hero { /*login + welcome brandname*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.container { /*container for section*/
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SignupButton{
+  display:flex;
+  font-weight:bold;
+  background-color: var(--accentgradient);
+  padding: 15px 50px;  /* makes it grow naturally */
+  border-radius: 60px;
+  border: None;
+}
+
+.Brandname{
     font-weight: bold;
     background: linear-gradient(90deg, 
     var(--accent), 
@@ -29,4 +68,13 @@
   100% {/*back to start*/
     background-position: 0% 50%;
   }
+}
+
+
+.LoginButton{
+  font-weight:bold;
+  background-color: var(--accentgradient);
+  padding: 15px 100px;  /* makes it grow naturally */
+  border-radius: 12px;
+  border:None;
 }

@@ -2,19 +2,24 @@ import styles from "./Header.module.css"
 
 export default function Header(){
     return (
-        <header className={styles.header}>
-            <h1>
-                Welcome to <span className={styles.brandname}>SentryFlow</span>
-            </h1>
+        <header className={styles.Header}>
+            
+            {/* Sticky navbar at top */}
+            <nav className={styles.NavBar}>
+                <div className={styles.container}>
+                    <span className={styles.Logo}>SentryFlow</span>
+                    <button className={styles.SignupButton}>Sign Up</button>
+                </div>
+            </nav>
 
-            <div className={styles.authButtons}>
-                <button className={styles.loginButton}>
-                    Login
-                </button>
-                <button className={styles.signupButton}>
-                    Sign Up
-                </button>
-            </div>
+            {/* Hero section below navbar */}
+            <div className={styles.Hero}>
+                    <h1>
+                        Welcome to <span className={styles.Brandname}>SentryFlow</span>
+                    </h1>
+                    
+                    <button className={styles.LoginButton}>Login</button>
+                </div>
         </header>
     );
 }

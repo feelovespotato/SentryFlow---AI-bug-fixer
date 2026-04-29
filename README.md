@@ -64,3 +64,9 @@ SentryFlow AI aims to reduce debugging time by turning system errors into self-h
 ## 📌 Status
 
 🚧 In active development (MVP phase)
+
+## figma prototype
+https://www.figma.com/site/EH0ta8smbXMfRjWeT4yH3h/Untitled?node-id=0-1&t=9z143PGXqTCdQczv-1
+
+## login page prototype
+![alt text](<prototype login page.png>)
