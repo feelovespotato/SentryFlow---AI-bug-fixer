@@ -33,14 +33,23 @@
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6; /**/ 
-    --bg: #16171d;
-    --border: #000000;
+
     --code-bg: #1f2028;
-    --accent: #B0E4CC;/**/
-    --accentgradient: #408A71; /**/
-    --hoverbutton:#285A48; /**/
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
+
+    /*Raw color*/
+    --blackgreen:#091413; /**/
+    --lightgreen: #B0E4CC;/**/
+    --lightergreen:#1da566;
+    --midgreen: #408A71; /**/
+    --darkgreen:#285A48; /**/
+
+    --logintext:var(--text-h);
+
+    --bg: var(--blackgreen); /**/ 
+    --bggradient:var(--darkgreen); /**/
+
+    --buttonborder:var(--blackgreen); /**/ 
+
     --social-bg: rgba(47, 48, 58, 0.5);
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
@@ -53,6 +62,9 @@
 
 body {
   margin: 0;
+  background: linear-gradient(15deg, 
+  var(--bg) 50px, 
+  var(--darkgreen) );
 }
 
 #root {
@@ -74,12 +86,12 @@ h2 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 60px;
   letter-spacing: -1.68px;
-  margin: 32px 0;
+  margin: 0;
   @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
+    font-size: 60px;
+    
   }
 }
 h2 {
@@ -93,6 +105,10 @@ h2 {
 }
 p {
   margin: 0;
+  font-size: 20px;
+  @media(max-width:1024px){
+    font-size: 18px;
+  }
 }
 
 code,

@@ -1,8 +1,8 @@
 .Header {
-    display:block;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    text-align: center; /*horizontal center*/
+  display:block;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  text-align: center; /*horizontal center*/
 
 }
 
@@ -10,21 +10,18 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--bg);
+  background:transparent;
   display: flex;
   justify-content: space-between;  /* logo left, button right */
   align-items: center;
-  padding: 15px 32px;
+  padding: 15px 15px;
 }
 
-.Hero { /*login + welcome brandname*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 120px 0;
-  text-align: center;
+.Logo{
+  width:120px;
+  height:auto;
 }
+
 
 .container { /*container for section*/
   max-width: 1200px;
@@ -39,42 +36,19 @@
 .SignupButton{
   display:flex;
   font-weight:bold;
-  background-color: var(--accentgradient);
+  font-size: 18px;
+  background-color: var(--midgreen);
   padding: 15px 50px;  /* makes it grow naturally */
   border-radius: 60px;
-  border: None;
+  border: 2px solid var(--buttonborder);
+  cursor:pointer;
 }
 
-.Brandname{
-    font-weight: bold;
-    background: linear-gradient(90deg, 
-    var(--accent), 
-    var(--accentgradient) );
-    background-clip: text; /*show bg in text shape*/
-    -webkit-text-fill-color: transparent;/*actual text color invisible*/
-    background-size: 300% 300%;
-    animation: gradientMove 5s ease infinite; /*full cycle 5s, ease movement, infinite*/
-}
-
-@keyframes gradientMove {
-  0% { /*start position*/
-    background-position: 0% 50%;
-  }
-
-  50% {/*move right*/
-    background-position: 100% 50%;
-  }
-
-  100% {/*back to start*/
-    background-position: 0% 50%;
-  }
+.SignupButton:hover{
+  background-color: var(--lightergreen);
+  transition: background-color 0.2s ease;
+  transform: translateY(-3px);        /* moves up 3px */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 
-.LoginButton{
-  font-weight:bold;
-  background-color: var(--accentgradient);
-  padding: 15px 100px;  /* makes it grow naturally */
-  border-radius: 12px;
-  border:None;
-}
